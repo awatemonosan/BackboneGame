@@ -1,7 +1,7 @@
 var unitData = [
   {
     name: 'Space Marine',
-    sprites: 'sprites/marine.tga',
+    sprites: 'gfx/units/marine/marine.tga',
     maxHealth: 100,
     maxEnergy: 100,
     moveSpeed: 4,

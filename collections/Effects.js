@@ -3,12 +3,12 @@ var Effects = Backbone.Collection.extend({
 
   spawn: function( effect, target, direction ){
     effect = new Effect( effect );
-    target = target || new Vector2(0.5,0.5);//TODO: STOP OVERENGINEERING. default to middle of screen.
+    target = target || new Vec2(0.5,0.5);//TODO: STOP OVERENGINEERING. default to middle of screen.
     if(target.isUnit) {
       target = target.position;
     }
 
-    direction = direction || new Vector(0,0);
+    direction = direction || new Vec2(0,0);
 
     effect.position = target;
     effect.direction = direction;

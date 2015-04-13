@@ -1,3 +1,5 @@
+//DELETE THIS
+
 // SongModel.js - Defines a backbone model class for songs.
 var SongModel = Backbone.Model.extend({
   event: { //need this for ended
