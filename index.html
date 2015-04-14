@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
-     below them until after the scripts load-->
+    <!-- BOWER -->
     <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/backbone/backbone.js"></script>
 
-    <script src="data/data.js"></script>
+    <!-- LIBS -->
+    <script src="lib/Extensions.js"></script>
+    <script src="lib/Helpers.js"></script>
+    <script src="lib/Input.js"></script>
+    <script src="lib/Vec2.js"></script>
 
-    <script src="models/SongModel.js"></script>
-    <script src="collections/Songs.js"></script>
-    <script src="collections/SongQueue.js"></script>
+    <!-- DATA -->
+    <script src="data/ActionData.js"></script>
+    <script src="data/BuffData.js"></script>
+    <script src="data/EffectData.js"></script>
+    <script src="data/EquipmentData.js"></script>
+    <script src="data/ProjectileData.js"></script>
+    <script src="data/TileData.js"></script>
+    <script src="data/UnitData.js"></script>
+
+    <!-- COLLECTIONS -->
+    <script src="collections/Effects.js"></script>
+
+    <!-- MODELS -->
+    <script src="models/GameObjectModel.js"></script>
+    
+    <script src="models/TileModel.js"></script>
+    <script src="models/TileMapModel.js"></script>
+
     <script src="models/AppModel.js"></script>
+    <!-- VIEWS -->
+    <script src="views/TileView.js"></script>
+    <script src="views/TileMapView.js"></script>
 
-    <script src="views/PlayerView.js"></script>
-    <script src="views/LibraryView.js"></script>
-    <script src="views/LibraryEntryView.js"></script>
     <script src="views/AppView.js"></script>
 
     <script>
       $(function(){
         // set up model objects
-        var app = new AppModel({library: library});
+        var app = new AppModel();
         // build a view for the top level of the whole app
         var appView = new AppView({model: app});
-        // put the view onto the screen
-        $('body').append(appView.render());
       });
     </script>
   </body>

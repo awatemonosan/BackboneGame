@@ -1,5 +1,5 @@
 var Effects = Backbone.Collection.extend({
-  model: Effect,
+  //model: Effect,
 
   spawn: function( effect, target, direction ){
     effect = new Effect( effect );

@@ -2,9 +2,8 @@
 var AppModel = Backbone.Model.extend({
 
   initialize: function(params){
-    this.set('TileMap', new TileMap());
-//    this.set('GameObjects', new GameObjects());
-
+    this.set('TileMap', new TileMapModel());
+    //this.set('GameObjects', new GameObjects());
   }
 
 });
